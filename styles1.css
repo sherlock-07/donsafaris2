@@ -189,7 +189,20 @@ header {
 #home {
   width: 100%;
   height: 70vh;
-  background-image: url('assets/safari4.jpg');
+  background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+  url('assets/safari4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 5rem;
+}
+
+
+#home1 {
+  width: 100%;
+  height: 70vh;
+  background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+  url('assets/safari13.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
