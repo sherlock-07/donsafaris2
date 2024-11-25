@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    
+    <title>Don Tours Site</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logodark.png" alt="" class="logo"></a> 
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="safaris.html">SAFARIS</a></li>
+        <li><a href="trekking.html">TREKKING</a></li>
+        <li><a href="destination.html">DESTINATIONS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+      <div class="nav__btns">
+        <a href="custom.html"><button class="btn">CUSTOMIZE TRIP</button></a>
+      </div>
+     
+    </nav>
+   
+
+    <header>
+      <div class="header__container">              
+        <div class="header__content">
+          <p>EXTRAORDINARY ADVENTURES</p>
+          <h1>Experience The Magic Of Nature!</h1>
+          <div class="header__btns">
+            <button class="btn">Book A Trip Now</button>
+           <!--<a href="#">
+              <span><i class="ri-play-circle-fill"></i></span>
+            </a>--> 
+          </div>
+        </div>
+        <!--<div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>-->
+      </div>
+
+      <video autoplay loop muted plays-inline class="background-clip">
+        <source src="assets/bg3.mp4" type="video/mp4">
+      </video>
+
+    </header>
+
+    <section class="section__container showcase__container" id="about">
+      <div class="showcase__image">
+        <img src="assets/showcase.jpg" alt="showcase" />
+      </div>
+      <div class="showcase__content">
+         
+        <h4>Unveil Tanzania’s Untouched Beauty</h4>
+        <p>
+          Join us at Don Odyssey Safaris for an unforgettable 
+          adventure in Tanzania’s breathtaking wilderness. 
+          Located in the heart of East Africa, we provide 
+          thrilling experiences, a commitment to conservation,
+          and top-notch hospitality. <br><br>
+          <b>Discover the Wonders of Tanzania</b><br>
+          Explore the natural beauty of Tanzania, where the Serengeti plains
+          teem with wildlife, Mount Kilimanjaro stands tall, and the 
+          turquoise waters of Zanzibar beckon. From sweeping savannahs 
+          to dense jungles, Tanzania’s diverse landscapes are waiting 
+          to be discovered.
+
+
+        </p>
+        <p>
+         <b>Our Commitment to Conservation</b><br>
+          Begin your adventure with Don Odyssey Safaris. Choose from our various
+          safari packages, discover our eco-friendly initiatives, and be inspired
+          by the incredible beauty of Tanzania. By choosing Don Odyssey Safaris, 
+          you not only embark on a thrilling journey but also contribute to the 
+          protection of Tanzania’s rich biodiversity. Learn more about our conservation 
+          efforts, including wildlife preservation programs and community-based projects, 
+          and join us in making a positive difference. Your adventure is not just a 
+          journey – it’s a step towards safeguarding the wonders of Tanzania.
+          Your journey starts now!
+        </p>
+        <div class="showcase__btn">
+         <a href="about.html">
+          <button class="btn">
+            Read More
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+         </a> 
+        </div>
+      </div>
+   
+    </section>
+
+    <section class="section__container destination__container" id="tour">
+      <h2 class="section__header">Popular Destination</h2>
+      <p class="section__description">
+        Discover the Most Loved Destinations Around East Africa
+      </p>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="assets/destination-1.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>NGORONGORO</h4>
+             <!--<p>New York City, USA</p>-->
+            </div>
+            <!--<div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>-->
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/lion2.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>SERENGETI</h4>
+              <!--<p>Paris, France</p>-->
+            </div>
+            <!--<div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>-->
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-3.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>ZANZIBAR</h4>
+              <!--<p>Bali, Indonesia</p>-->
+            </div>
+            <!--<div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container journey__container" id="tour">
+      <h2 class="section__header">Adventure Made Simple!</h2>
+      <p class="section__description">
+        Effortless Planning for You
+      </p>
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Seamless Booking Process</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Easy Reservations, One Click Away</h4>
+            <p>
+              From accommodations to activities and transfers,
+              everything you need is available at your fingertips, making travel
+              planning effortless.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Tailored Itineraries</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Customized Plans Just for You</h4>
+            <p>
+              Enjoy personalized travel plans designed to match your preferences
+              and interests. Whether you seek adventure or cultural immersion,
+              our tailored itineraries ensure your journey is uniquely yours.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Expert Local Insights</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Insider Tips and Recommendations</h4>
+            <p>
+              We provide curated recommendations for dining, sightseeing, and
+              hidden gems, so you can experience each destination like a local.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discount1">
+      <div class="background-image"></div>
+      <div class="section__container discount__container1">
+       
+        <h2>
+         Don Odyssey Safaris<br />
+        </h2>
+        <span>Timeless Memories</span>
+        
+      </div>
+    </section>
+
+
+    <section class="section__container discover__container" id="package">
+      <h2 class="section__header">Discover The World From Tanzania</h2>
+      <p class="section__description">
+        Experience Breathtaking Views and Unique Perspectives
+      </p>
+      <div class="discover__grid">
+        <div class="discover__card">
+          <span><i class="ri-treasure-map-line"></i></span>
+          <h4>Trekking</h4>
+          <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+           Eos, possimus consectetur. In tempora ut nisi molestiae 
+           explicabo ab voluptates! Eligendi commodi eos nostrum 
+           excepturi quod tempore in officia dicta enim.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-safari-line"></i></span>
+          <h4>Walking Safaris</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+           Eos, possimus consectetur. In tempora ut nisi molestiae 
+           explicabo ab voluptates! Eligendi commodi eos nostrum 
+           excepturi quod tempore in officia dicta enim.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-landscape-line"></i></span>
+          <h4>Historic Landmarks</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Eos, possimus consectetur. In tempora ut nisi molestiae 
+            explicabo ab voluptates! Eligendi commodi eos nostrum 
+            excepturi quod tempore in officia dicta enim.
+          </p>
+        </div>
+      </div>
+    </section>
+
+   
+   
+    <section class="section__container showcase__container" id="contact">
+      <div class="showcase__image1">
+         <img src="assets/safari21.jpg" alt="showcase" />
+
+       </div>
+       <div class="showcase__content">
+         <h4>Reach To Us Easily</h4>
+         
+        <div class="contact-container">
+          <h1>Contact Us</h1>
+          <p>Have questions or need more information? Send us a message!</p>
+          
+          <form action="https://formspree.io/f/xjkvwwvj" method="POST" id="contactForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+  
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Your Email">
+  
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required placeholder="Subject">
+  
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+  
+              <button type="submit">Send Message</button>
+          </form>
+  
+          <div id="responseMessage" class="hidden"></div>
+      </div>
+  
+   
+           <!--<div class="address">
+               <h1>Talk To Us</h1>
+   
+               <div class="detailsWrapper">
+                   <div class="detail">
+                       <img src="img/email.png" alt="">
+                       <div class="text">
+                           <h6>EMAIL</h6>
+                           <p>something@example.com</p>
+                       </div>
+                   </div>
+   
+                   <div class="detail">
+                       <img src="img/phone.png" alt="">
+                       <div class="text">
+                           <h6>PHONE NUMBER</h6>
+                           <p>202-555-0188</p>
+                       </div>
+                   </div>
+   
+                   <div class="detail">
+                       <img src="img/location.png" alt="">
+                       <div class="text">
+                           <h6>ADDRESS</h6>
+                           <p>2727 Ocean Road,<br />
+                               Malibu, CA, 90264
+                           </p>
+                       </div>
+                   </div>
+   
+               </div>
+   
+               <div class="followUsWrapper">
+                   <h3>Follow Us</h3>
+                   <div class="socialLink">
+                       <li><a href=""> <img src="img/facebook.png"> </a></li>
+                       <li><a href=""> <img src="img/linkedin.png"> </a></li>
+                       <li><a href=""> <img src="img/video.png"> </a></li>
+                       
+                   </div>
+               </div>-->
+           </div>
+   
+       </section>
+         <!--<div class="showcase__btn">
+           <button class="btn">
+             Book A Flight Now
+             <span><i class="ri-arrow-right-line"></i></span>
+           </button>
+         </div>-->
+       </div>
+     </section>
+ 
+
+    <section class="section__container client__container">
+      <h2 class="section__header">Loved By Over Thousand Travelers</h2>
+      <p class="section__description">
+        Discover the stories of wanderlust and cherished memories through the
+        eyes of our valued clients.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Eos, possimus consectetur. In tempora ut nisi molestiae 
+            explicabo ab voluptates! Eligendi commodi eos nostrum 
+            excepturi quod tempore in officia dicta enim.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-1.jpg" alt="client" />
+                <div>
+                  <h4>John Adams</h4>
+                  <h5>Travel Blogger</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Eos, possimus consectetur. In tempora ut nisi molestiae 
+                  explicabo ab voluptates! Eligendi commodi eos nostrum 
+                  excepturi quod tempore in officia dicta enim.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Emily Thompson</h4>
+                  <h5>Adventure Enthusiast</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Eos, possimus consectetur. In tempora ut nisi molestiae 
+                  explicabo ab voluptates! Eligendi commodi eos nostrum 
+                  excepturi quod tempore in officia dicta enim.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-3.jpg" alt="client" />
+                <div>
+                  <h4>Sarah Lee</h4>
+                  <h5>Cultural Historian</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Eos, possimus consectetur. In tempora ut nisi molestiae 
+                  explicabo ab voluptates! Eligendi commodi eos nostrum 
+                  excepturi quod tempore in officia dicta enim.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-4.jpg" alt="client" />
+                <div>
+                  <h4>David Patel</h4>
+                  <h5>Business Executive</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="nav__logo">DonOdyssey </a>
+          </div>
+          <p>
+            Explore the world with ease and excitement through our comprehensive
+            travel platform. Your journey begins here, where seamless planning
+            meets unforgettable experiences.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="safaris.html">Safaris</a></li>
+            <li><a href="trekking.html">Trekking</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +91 9876543210
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span> info@DonOdyssey
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> Arusha, Tanzania
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="https://formspree.io/f/mldenklq" method="POST">
+            <input type="email" name="Subscription" placeholder="Enter your email" required/>
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 jerryDesigns. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

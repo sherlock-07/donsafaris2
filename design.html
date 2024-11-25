@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Your Safari in Tanzania</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <h1>Design Your Safari in Tanzania</h1>
+        <form action="/submit-safari" method="post">
+            <!-- Destination Selection -->
+            <div class="form-group">
+                <label for="destination">Choose Your Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Select a Park</option>
+                    <option value="serengeti">Serengeti National Park</option>
+                    <option value="ngorongoro">Ngorongoro Crater</option>
+                    <option value="tarangire">Tarangire National Park</option>
+                    <option value="lake_manyara">Lake Manyara National Park</option>
+                    <option value="ruaha">Ruaha National Park</option>
+                </select>
+            </div>
+
+            <!-- Duration of Safari -->
+            <div class="form-group">
+                <label for="duration">Duration of Your Safari (Days):</label>
+                <input type="number" id="duration" name="duration" min="1" max="14" required>
+            </div>
+
+            <!-- Safari Type -->
+            <div class="form-group">
+                <label for="safari-type">Type of Safari:</label>
+                <select id="safari-type" name="safari-type" required>
+                    <option value="">Select Safari Type</option>
+                    <option value="classic">Classic Safari</option>
+                    <option value="luxury">Luxury Safari</option>
+                    <option value="adventure">Adventure Safari</option>
+                    <option value="family">Family Safari</option>
+                </select>
+            </div>
+
+            <!-- Accommodation Type -->
+            <div class="form-group">
+                <label for="accommodation">Accommodation Type:</label>
+                <select id="accommodation" name="accommodation" required>
+                    <option value="">Select Accommodation</option>
+                    <option value="camping">Camping</option>
+                    <option value="lodges">Luxury Lodges</option>
+                    <option value="budget-lodges">Budget Lodges</option>
+                    <option value="tented-camps">Tented Camps</option>
+                </select>
+            </div>
+
+            <!-- Group Size -->
+            <div class="form-group">
+                <label for="group-size">Number of People:</label>
+                <input type="number" id="group-size" name="group-size" min="1" max="20" required>
+            </div>
+
+            <!-- Special Requests -->
+            <div class="form-group">
+                <label for="special-requests">Special Requests (Optional):</label>
+                <textarea id="special-requests" name="special-requests" rows="4" placeholder="Enter any special requirements..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit Your Safari Design</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
