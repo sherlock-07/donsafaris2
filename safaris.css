@@ -187,27 +187,18 @@ header {
 }
 
 #home {
-  width: 100%;
-  height: 70vh;
-  background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-  url('assets/safari4.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 5rem;
-}
-
-
-#home1 {
-  width: 100%;
-  height: 70vh;
-  background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-  url('assets/safari13.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 5rem;
-}
+    width: 100%;
+    height: 70vh;
+    background-image: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+      url('assets/lion.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5rem;
+    background-color: var(--primary-color-dark);
+  }
+  
 
 .text {
   text-align: center;
@@ -224,61 +215,85 @@ header {
   color: var(--primary-color);
 }
 
+/*WILDLIFE SAFARIS IN TANZANIA*/
 
-.showcase__content1{
-  margin-top: 1rem;
-  text-align: center;
-  height: 50vh;
-  width: 100%;
-  align-items: center;
-  color: var(--text-light);
+/* General Styling */
+.safari-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 5em 20rem; /* Adjusted padding for smaller screens */
+    margin-right: 10rem;
+    height: 50vh;
+  }
   
-}
-.about__container{
-  text-align: center;
-  width: 100%;
-  align-items: center;
-  padding: 0 15rem;
-  font-size: 1.5rem;
-  letter-spacing: 0.09em;
-}
+  /* Content Container */
+  .safari-content {
+    margin-right: 5rem;
+    width: 50%;
+  }
+  
+  .safari-content h1 {
+    font-size: 3.5rem;
+    color: var(--text-dark);
+  }
+  
+  /* Text Styling */
+  .safari-content {
+    color: var(--text-light);
+  }
+  
+  /* Image Styling */
+  .showcase__image1 img {
+    max-width: 400px;
+    margin-inline: auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
 
-.about__container h1{
-  font-size:5rem;
-  color: var(--text-light);
-}
-
-.showcase__content2 h4{
-  color: var(--white);
-  margin-bottom: 1rem;
-  font-size: 3rem;
-  font-weight: 600;
-}
+/*DISCOVER TANZANIA*/
 
 
-.showcase__content2 p{
-  color: var(--white);
-  margin-bottom: 0rem;
-  font-size: 1.04rem;
-}
+.discover__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .discover__card {
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 1rem;
+  }
+  
+  .discover__card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .discover__card span {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: rgba(40, 135, 255, 0.1);
+    border-radius: 100%;
+  }
+  
+  .discover__card span img{
+    display: flex;
+    max-width: 100%;
+  }
+  
+  .discover__card h4 {
+    max-width: 250px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
 
-.showcase__image img {
-  max-width: 400px;
-  margin-inline: auto;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.showcase__content h4 {
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 600;
-  color: var(--text-light);
-}
-
-.showcase__content p {
-  margin-bottom: 1rem;
-  color: var(--text-light);
-}
 
 
 
@@ -450,238 +465,76 @@ footer {
   color: var(--text-light);
   text-align: center;
 }
-/*BLOG*/
-
-.blog-section {
- /* background-color: #f9f9f9;*/
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.section-title h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.section-title p {
-  font-size: 1.2rem;
-  color: #777;
-  margin-bottom: 2rem;
-}
-
-/* Blog Cards Container */
-.blog-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-/* Blog Card */
-.blog-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 350px;
-  transition: transform 0.3s;
-}
-
-.blog-card:hover {
-  transform: translateY(-10px);
-}
-
-.blog-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.blog-content {
-  padding: 1.5rem;
-  text-align: left;
-}
-
-.blog-content h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.blog-content p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1.9rem;
-  text-align: left;
-}
-
-.read-more-btn {
-  display: inline-block;
-  background-color:var(--primary-color);
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-decoration: none;
-}
-
-.read-more-btn:hover {
-  background-color: var(--primary-color-dark);
-}
 
 
-/* Blog Post Styles */
-.blog-post {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: left;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.post-header h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.post-header p {
-  font-size: 1rem;
-  color: #777;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.post-content {
-  margin-bottom: 2rem;
-  text-align: left;
-}
-
-.post-content .post-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
-}
-
-.post-content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #555;
-  margin-bottom: 1.5rem;
-  text-align: left;
-}
-
-.back-btn {
-  display: inline-block;
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-decoration: none;
-  text-align: center;
-}
-
-.back-btn:hover {
-  background-color: var(--text-light);
-}
-
-
-/* General Reset For contact page*/
-h1, p, label, input, textarea, button {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-/* Contact Container */
-.contact-container {
-  background-color: #fff;
-  padding: 20px 30px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  max-width: 500px;
-  width: 100%;
-  margin:1em auto;
-}
-
-h1 {
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-p {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #777;
-}
-
-/* Form Styles */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 5px;
-  color: #555;
-}
-
-input, textarea {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-textarea {
-  /*resize: vertical;*/
-  resize: none;
-  min-height: 100px;
-}
-
-button {
-  background-color:var(--primary-color);
-  color: #fff;
-  border: none;
-  padding: 12px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: var(--text-light);
-}
-
-/* Response Message */
-#responseMessage {
-  margin-top: 15px;
-  text-align: center;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.hidden {
-  display: none;
-}
 
 /* Media Queries for Responsiveness */
 
+
+
+/* Tablets and smaller screens */
+@media (max-width: 1024px) {
+    .safari-container {
+      padding: 3em 7rem; /* Reduce padding for smaller screens */
+      flex-direction: column; /* Stack items vertically */
+    padding: 3em 5rem; /* Reduce padding */
+    margin-right: 5rem; /* Adjust margin */
+    }
+  
+    .safari-content {
+      width: 100%;
+      margin-right: 0;
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .safari-content h1 {
+      font-size: 2.5rem; /* Adjust font size for tablets */
+    }
+  
+    .showcase__image1 img {
+      max-width: 300px; /* Reduce image size for tablets */
+    }
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 768px) {
+    .safari-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 2em 2rem; /* Further reduce padding */
+        margin-right: 2rem; /* Adjust margin */
+        margin-bottom: 15rem;
+      }
+  
+    .safari-content h1 {
+      font-size: 2rem; /* Further reduce font size for mobiles */
+    }
+  
+    .showcase__image1 img {
+      max-width: 100%; /* Image should take full width on mobile */
+      margin-top: 1em; /* Add some space above image */
+    }
+  }
+  
+  /* Small mobile screens */
+  @media (max-width: 480px) {
+    .safari-container {
+      padding: 1.5em 1rem; /* Further reduce padding for very small screens */
+    }
+  
+    .safari-content h1 {
+      font-size: 1.8rem; /* Further reduce font size for small screens */
+    }
+  
+    
+  }
+
+
+@media(width>540px){
+    .discover__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+}  
 
 
 /* Responsive Design */
@@ -928,6 +781,11 @@ button:hover {
 
   .showcase__content1 p{
     font-size: 0.88rem;
+  }
+
+  
+  .discover__grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
 }
